@@ -1,0 +1,133 @@
+.reports-container {
+    background-image: url('/src/assets/gradient-wp3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.reports-header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.reports-title {
+    font-size: 36px;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background: white;
+    border-color: #3fa6ff;
+    color: #2079ff;
+    transform: translateX(-5px);
+}
+
+.loading-message {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 24px;
+    color: black;
+}
+
+.no-shifts-message {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.no-shifts-message p {
+    font-size: 20px;
+    color: black;
+    margin: 10px 0;
+}
+
+/* Shifts Section */
+.shifts-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.shifts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.shift-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid #a0dbff;
+}
+
+.shift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.shift-date {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.shift-details {
+    margin-bottom: 15px;
+}
+
+.shift-detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.detail-label {
+    color: black;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #60abb0;
+    font-weight: 600;
+}

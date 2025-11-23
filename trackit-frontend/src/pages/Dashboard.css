@@ -1,0 +1,112 @@
+.dashboard-container {
+    min-height: 100vh;
+    background: url('../assets/gradient-wp3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.dashboard-header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.dashboard-title {
+    font-size: 42px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.dashboard-subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    gap: 10px;
+    padding: 30px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.action-button:hover:not(:disabled) {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.action-button-disabled {
+    background: #9e9e9e;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.button-icon {
+    font-size: 32px;
+}
+
+.coming-soon {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.logout-button {
+    padding: 12px 30px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+    background: #303030;
+    transform: translateY(-2px);
+}
+
+.action-button-add {
+    background-image: url('/src/assets/new-entry.png');
+    background-color: #fef5f5;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.action-button-reports {
+    background-image: url('/src/assets/reports.png');
+    background-color: #fffef5;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,102 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../assets/gradient-wp2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.register-card {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.register-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3ac7ff;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.redirect-text {
+    margin-top: 24px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.redirect-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.redirect-link:hover {
+    text-decoration: underline;
+}
