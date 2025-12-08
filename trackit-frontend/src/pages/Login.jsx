@@ -25,13 +25,15 @@ function Login() {
         setError('');
         setLoading(true);
 
-        try { 
+        try {
             const response = await authAPI.login(formData);
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('user', JSON.stringify(response.data.user));
             navigate('/dashboard');
         } catch (err) {
             setError(err.response?.data?.error || 'Login failed');
+        } finally {
+            setLoading(false);
         }
     };
 

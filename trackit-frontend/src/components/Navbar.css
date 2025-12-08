@@ -1,0 +1,62 @@
+.navbar-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80px;
+    background: rgb(243, 251, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.nav-item.active {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.nav-item i {
+    pointer-events: none;
+}
+
+.logout-item {
+    background: rgba(255, 107, 107, 0.1);
+    color: #d32f2f;
+}
+
+.logout-item:hover {
+    background: rgba(255, 107, 107, 0.2);
+    transform: translateX(5px);
+}

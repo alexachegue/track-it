@@ -15,9 +15,11 @@ app.use(express.json());
 // Routes
 const userRoutes = require('./routes/userRoutes');
 const shiftRoutes = require('./routes/shiftRoutes');
+const analyticsRoutes = require('./routes/analyticsRoutes');
 
 app.use('/api/users', userRoutes);
 app.use('/api/shifts', shiftRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 // Test route
 app.get('/', (req, res) => {

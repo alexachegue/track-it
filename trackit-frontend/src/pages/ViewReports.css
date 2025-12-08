@@ -6,17 +6,12 @@
     background-attachment: fixed;
     min-height: 100vh;
     padding: 40px 20px;
+    padding-left: 100px;
 }
 
 .reports-header {
     max-width: 1200px;
     margin: 0 auto 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
 }
 
 .reports-title {
@@ -24,25 +19,6 @@
     color: black;
     font-weight: 700;
     margin: 0;
-}
-
-.back-button {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.back-button:hover {
-    background: white;
-    border-color: #3fa6ff;
-    color: #2079ff;
-    transform: translateX(-5px);
 }
 
 .loading-message {
@@ -130,4 +106,25 @@
 .detail-value {
     color: #60abb0;
     font-weight: 600;
+}
+
+.edit-button {
+    width: 35%;
+    padding: 14px;
+    margin: 10px;
+    background: #ebf5f6;
+    color: black;
+    border: 2px solid #b0d4d7;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.edit-button:hover {
+    background: white;
+    border-color: #60abb0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 171, 176, 0.2);
 }
