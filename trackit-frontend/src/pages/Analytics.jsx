@@ -34,7 +34,7 @@ const Analytics = () => {
       setError('');
 
       const token = localStorage.getItem('token');
-      const response = await fetch(`${API_URL}/api/analytics/dashboard`, {
+      const response = await fetch(`${API_URL}/analytics/dashboard`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -57,7 +57,7 @@ const Analytics = () => {
   const fetchEarningsData = async (period) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`${API_URL}/api/analytics/earnings?period=${period}`,
+      const response = await fetch(`${API_URL}/analytics/earnings?period=${period}`,
         {
           headers: {Authorization: `Bearer ${token}`}
         }
