@@ -81,7 +81,7 @@ const AddEntry = () => {
                 hourly_wage: formData.hourly_wage ? parseFloat(formData.hourly_wage) : 0
             };
 
-            const response = await fetch(`${API_URL}/api/shifts`, {
+            const response = await fetch(`${API_URL}/shifts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

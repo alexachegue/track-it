@@ -26,7 +26,7 @@ const EditShift = () => {
     const fetchShift = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/shifts/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -111,7 +111,7 @@ const EditShift = () => {
                 hourly_wage: parseFloat(formData.hourly_wage) || 0
             };
 
-            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/shifts/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ const EditShift = () => {
         try {
             const token = localStorage.getItem('token');
 
-            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/shifts/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -185,11 +185,6 @@ const EditShift = () => {
             <div className="edit-shift-card">
                 <div className="card-header">
                     <h2>Edit Shift</h2>
-                    <button
-                        type="button"
-                        className="btn-back"
-                        onClick={() => navigate('/dashboard')}
-                    >Home</button>
                 </div>
 
                 <form onSubmit={handleSubmit} className="edit-shift-form">
