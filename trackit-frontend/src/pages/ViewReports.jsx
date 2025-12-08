@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { shiftAPI } from '../services/api';
 import Navbar from '../components/Navbar';
 import './ViewReports.css';
+import { API_URL } from '../config';
 
 function ViewReports() {
     const [shifts, setShifts] = useState([]);

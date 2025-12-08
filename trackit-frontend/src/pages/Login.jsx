@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { authAPI } from '../services/api';
 import './Login.css';
+import { API_URL } from '../config';
 
 function Login() {
     const [formData, setFormData] = useState({

@@ -1,5 +1,5 @@
 .reports-container {
-    background-image: url('/src/assets/gradient-wp3.png');
+    background-image: url('../assets/gradient-wp3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +44,6 @@
     margin: 10px 0;
 }
 
-/* Shifts Section */
 .shifts-section {
     max-width: 1200px;
     margin: 0 auto;

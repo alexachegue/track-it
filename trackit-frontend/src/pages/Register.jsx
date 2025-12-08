@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { authAPI } from '../services/api';
 import { useNavigate, Link } from 'react-router-dom';
 import './Register.css';
+import { API_URL } from '../config';
 
 function Register() {
     const [formData, setFormData] = useState({

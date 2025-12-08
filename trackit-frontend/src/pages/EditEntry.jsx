@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import './EditEntry.css'
+import './EditEntry.css';
+import { API_URL } from '../config';
 
 const EditShift = () => {
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ const EditShift = () => {
     const fetchShift = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch(`http://localhost:3000/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -110,7 +111,7 @@ const EditShift = () => {
                 hourly_wage: parseFloat(formData.hourly_wage) || 0
             };
 
-            const response = await fetch(`http://localhost:3000/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -147,7 +148,7 @@ const EditShift = () => {
         try {
             const token = localStorage.getItem('token');
 
-            const response = await fetch(`http://localhost:3000/api/shifts/${id}`, {
+            const response = await fetch(`${API_URL}/api/shifts/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`

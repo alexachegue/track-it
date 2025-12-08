@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './Analytics.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { API_URL } from '../config';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Analytics = () => {
@@ -33,7 +34,7 @@ const Analytics = () => {
       setError('');
 
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:3000/api/analytics/dashboard', {
+      const response = await fetch(`${API_URL}/api/analytics/dashboard`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -56,7 +57,7 @@ const Analytics = () => {
   const fetchEarningsData = async (period) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:3000/api/analytics/earnings?period=${period}`,
+      const response = await fetch(`${API_URL}/api/analytics/earnings?period=${period}`,
         {
           headers: {Authorization: `Bearer ${token}`}
         }

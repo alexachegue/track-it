@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './AddEntry.css';
+import { API_URL } from '../config';
 
 const AddEntry = () => {
     const navigate = useNavigate();
@@ -80,7 +81,7 @@ const AddEntry = () => {
                 hourly_wage: formData.hourly_wage ? parseFloat(formData.hourly_wage) : 0
             };
 
-            const response = await fetch('http://localhost:3000/api/shifts', {
+            const response = await fetch(`${API_URL}/api/shifts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
