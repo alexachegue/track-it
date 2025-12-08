@@ -9,10 +9,10 @@ Video link: https://uncg-my.sharepoint.com/:v:/g/personal/a_cheguesan_uncg_edu/I
 ---
 
 ## Deployed App
-URL: https://trackit-roan.vercel.app/login
-Login Credentials (if not signing up):
-    Username: demouser
-    Password: pw123
+URL: https://trackit-roan.vercel.app/login 
+Login Credentials (if not signing up):  
+    Username: demouser  
+    Password: pw123  
 
 ---
 
@@ -73,8 +73,6 @@ TrackIt is a web application designed to help restaurant servers track their tip
 ---
 
 ## Reflection
-
----
 
 ## Design Choices
 
